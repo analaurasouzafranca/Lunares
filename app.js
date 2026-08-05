@@ -32,6 +32,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
+// Rotas de Usuários (Sequelize)
+const usuarioRoutes = require('./routes/usuarioRoutes');
+app.use('/usuarios', usuarioRoutes);
 
 
 
